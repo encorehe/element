@@ -503,7 +503,7 @@
           }
         }
         if (option) return option;
-        const label = !isObject
+        const label = !isObject && this.allowCreate 
           ? value : '';
         let newOption = {
           value: value,
